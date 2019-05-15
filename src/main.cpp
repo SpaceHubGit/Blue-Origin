@@ -80,23 +80,7 @@ void setup()
                             // transfer from the NFF, this ensures that enough time has passed
                             // to allow for a complete transfer before timing out).
   
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// Example specific code to set up output pins for driving LEDs and set them to off.
-////////////////////////////////////////////////////////////////////////////////////////////////////
-  pinMode(2, OUTPUT);
-  pinMode(3, OUTPUT);
-  pinMode(4, OUTPUT);
-  pinMode(5, OUTPUT);
-  pinMode(6, OUTPUT);
-  pinMode(7, OUTPUT);
-  digitalWrite(2, LOW);
-  digitalWrite(3, LOW);
-  digitalWrite(4, LOW);
-  digitalWrite(5, LOW);
-  digitalWrite(6, LOW);
-  digitalWrite(7, LOW);
-////////////////////////////////////////////////////////////////////////////////////////////////////
-  
+
 }
 
 
@@ -141,15 +125,9 @@ void loop()
     
     
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// Example specific code for turning on an additional LED after each increment of altitude has been 
-// reached. 
+// code goes here
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-    (flight_info.altitude > INC) ? digitalWrite(2, HIGH) : digitalWrite(2, LOW);
-    (flight_info.altitude > (INC * 2)) ? digitalWrite(3, HIGH) : digitalWrite(3, LOW);
-    (flight_info.altitude > (INC * 3)) ? digitalWrite(4, HIGH) : digitalWrite(4, LOW);
-    (flight_info.altitude > (INC * 4)) ? digitalWrite(5, HIGH) : digitalWrite(5, LOW);
-    (flight_info.altitude > (INC * 5)) ? digitalWrite(6, HIGH) : digitalWrite(6, LOW);
-    (flight_info.altitude > (INC * 6)) ? digitalWrite(7, HIGH) : digitalWrite(7, LOW);
+    
 ////////////////////////////////////////////////////////////////////////////////////////////////////
     
   }
